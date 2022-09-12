@@ -1,6 +1,5 @@
 /**
- * the stdio is used to make the file printable
- * the main put the puts the string into a function
+ * main - put the puts the string into a function
  * the put pirnts \"Programming is like building a multilingual puzzle
  * returns a value 0
  */
