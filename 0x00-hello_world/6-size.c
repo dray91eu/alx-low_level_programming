@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * main - put the puts the string into a function
  * description: returns the value of each input type
@@ -5,7 +7,7 @@
  * Return: a value 0
  */
 
-#include <stdio.h>
+
 int main(void)
 {
 	char c;
