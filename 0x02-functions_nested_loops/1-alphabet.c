@@ -1,18 +1,16 @@
 #include "main.h"
-
 /**
- * main - print the letters of the alphabet
+ * alphabets - print the letters of the alphabet
  *
- * Description: print the letters of the alphabet
- *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 void alphabets(void)
 {
 	char c;
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
 	}
-_putchar('\n')
+_putchar('\n');
 }
