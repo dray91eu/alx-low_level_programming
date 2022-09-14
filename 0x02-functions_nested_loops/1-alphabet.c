@@ -7,17 +7,12 @@
  *
  * Return: Always 0 (Success)
  */
-
-int main(void)
+void alphabets(void)
 {
-	int i = 97;
-
-	while (i < 123)
+	char i;
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(i);
-		i++;
+		_putchar(i);
 	}
-	putchar(10);
-
-	return (0);
+_putchar('\n')
 }
