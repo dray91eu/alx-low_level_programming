@@ -2,6 +2,8 @@
 /**
  *print_alphabet_10x - function to print abc 10x
  *
+ *Description: This script prints letters a-z on time lines
+ *
  *Return: 0
  */
 
