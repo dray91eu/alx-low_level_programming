@@ -1,3 +1,4 @@
+0. int _putchar(char c)
 1. void _puts_recursion(char *s);
 2. void _print_rev_recursion(char *s);
 3. int _strlen_recursion(char *s);
