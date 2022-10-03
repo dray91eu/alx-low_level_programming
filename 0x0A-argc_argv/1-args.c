@@ -1,5 +1,4 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints the number of arguments passed into it
@@ -10,8 +9,8 @@
 
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int args = argc - 1;
+	int args = argc -1;
 
-	printf("%d\n", args);
+	printf("d\n", args);
 	return (0);
 }
