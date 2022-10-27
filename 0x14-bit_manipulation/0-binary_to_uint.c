@@ -1,61 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strlen - returns length of string (modified)
- * @s: string (const)
- * Return: length of string
+ * binary_to_uint - converts a binary number to unsigned int
+ * @b: string containing the binary number
+ *
+ * Return: the converted number
  */
-
-int _strlen(const char *s)
-{
-	int len = 0;
-
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-
-	return (len);
-}
-
-/**
- * power - exponents
- * @base: base
- * @exp: exponent
- * Return: result (int)
- */
-
-int power(int base, int exp)
-{
-	int i, num;
-
-	num = 1;
-	for (i = 0; i < exp; ++i)
-		num *= base;
-
-	return (num);
-}
-
-/**
- * binary_to_uint - converts a binary number to an unsigned int
- * @b: binary
- * Return: unsigned int
- */
-
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum;
-	int length, i;
+	int i;
+	unsigned int dec_val = 0;
 
-	sum = 0;
-	if (b == NULL)
-		return (sum);
-	length = _strlen(b);
-	for (i = length - 1; i >= 0; i--)
+	if (!b)
+		return (0);
+	for (i = 0; b[i]; i++)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		sum += (b[i] - '0') * power(2, length - i - 1);
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
-	return (sum);
+	return (dec_val);
 }
